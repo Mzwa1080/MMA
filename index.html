@@ -15,15 +15,22 @@
 
     <script type="text/javascript">
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.slider');
-        var instances = M.Slider.init(elems);
-      });
+      // document.addEventListener('DOMContentLoaded', function() {
+      //   var elems = document.querySelectorAll('.slider');
+      //   var instances = M.Slider.init(elems);
+      //
+      // });
 
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
       });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+      });
+
 
     </script>
 <!--
@@ -54,11 +61,24 @@
         <li><a href="" class="grey lighten-5">Location</a></li>
 
       </ul>
-      
+
     <div class="container ">
       <div class="row center">
 
-          <div class="slider">
+
+        <div class="carousel hide-on-small-and-down show-on-medium-and-up">
+           <a class="carousel-item" href="#one!"><img src="3.jpg"></a>
+           <a class="carousel-item" href="#two!"><img src="4.jpg"></a>
+           <a class="carousel-item" href="#three!"><img src="5.jpg"></a>
+           <a class="carousel-item" href="#four!"><img src="2.jpg"></a>
+           <a class="carousel-item" href="#five!"><img src="1.jpg"></a>
+         </div>
+
+
+
+
+
+          <div class="slider hide-on-med-and-up show-on-small-and-down">
               <ul class="slides">
                 <li>
                   <img src="3.jpg"> <!-- random image -->
